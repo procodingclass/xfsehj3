@@ -64,9 +64,9 @@ class Game {
 
         if (index === player.index) {
           fill("red");
+          stroke("black");
           ellipse(x, y, 60, 60);
-          bikes[index - 1].shapeColor = "red";
-
+          
           camera.position.x = width / 2;
           camera.position.y = bikes[index - 1].y;
         }
