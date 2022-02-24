@@ -25,7 +25,7 @@ function preload() {
 
 function setup() {
   database = firebase.database();
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(950, 470);
   game = new Game();
   game.getState();
   game.start();
@@ -46,6 +46,3 @@ function draw() {
   }
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
